@@ -16,6 +16,8 @@ env:
     - DIRECTORY="my_quest_3_sem" FILE="quest" OUTPUT_NAME="qoc_3_sem"
     # 4 семестр
     - DIRECTORY="my_quest_4_sem" FILE="quest" OUTPUT_NAME="qoc_4_sem"
+    # 6 семестр
+    - DIRECTORY="my_quest_6_sem" FILE="quest" OUTPUT_NAME="qoc_6_sem"
 
 
 before_install:
