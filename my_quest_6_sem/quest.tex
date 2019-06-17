@@ -74,16 +74,20 @@
         \label{eq:fermi_dirak_statistics}
     \end{equation}
     а $1 / 2 D(\varepsilon + \mu B)$ -- функция плотности состояний спинов одинаковой ориентации. Явное выражение для $D(\varepsilon)$ можно найти из его определения и предположения об изотропности:
+    % TODO: (aleksei) BAD \hspace !!! <- Mon Jun 17 17:37:06 2019
     \begin{equation*}
+    \hspace*{-8mm}
         D(\varepsilon) = \cfrac{dN}{dE}\, = \left|
         \begin{array}{c}
             E = \cfrac{\hbar^2 k^2}{2m}\, ,
             ~ dE = \cfrac{\hbar^2k}{m}\, dk \\
-            k = \sqrt{\cfrac{2m}{\hbar^2}\, E}, ~
-            dk = \cfrac{m}{\hbar^2 k}\, dE \\
-            dN = 2\cfrac{d^3k}{(2\pi)^3}\, = \cfrac{8 \pi k^2 dk}{8 \pi^3}\, = \cfrac{k^2 dk}{\pi^2}\, 
+            dN = 2\, \cfrac{d^3k}{(2\pi)^3}\, =
+            \cfrac{2 \cdot 4 \pi k^2 dk}{8 \pi^3}\, 
         \end{array}
-        \right| = \cfrac{1}{2\pi^2}\, \left(\cfrac{2m}{\hbar^2}\, \right)^{3 / 2}  \sqrt{E} dE  
+        \right| = \cfrac{2 \cdot 4\pi k^2 dk}{\cfrac{2\pi^3}{V}\, \cdot \cfrac{\hbar^2 k}{m}\, dk}\, =
+        \cfrac{8 \pi k^2 Vm}{8 \pi^3 \hbar^2}\, =
+        \cfrac{mVk^2}{\pi^2 \hbar^2}\, = \cfrac{V}{\pi^2}\, \cfrac{\sqrt{2m^3E}}{\hbar^3}\, =
+        \cfrac{3N}{2 E_{F}}\,  \sqrt{\cfrac{E}{E_{F}}\, }
     \end{equation*}
 
     \begin{equation}
